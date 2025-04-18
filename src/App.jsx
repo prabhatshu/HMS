@@ -1,12 +1,13 @@
 import Landing from "./components/Landing";
 import Header from "./components/Header";
-import './App.css'
+import './index.css'
+
 function App() {
 
   return (
     <div>
-    <Header></Header>
-    <Landing></Landing>
+      <Header/>
+      <Landing/>
     </div>
   );
 }
