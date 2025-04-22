@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate= useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -28,7 +29,7 @@ const Header = () => {
           <Link to="/payments" className="text-white hover:text-gray-400">Payments</Link>
           <Link to="/contact" className="text-white hover:text-gray-400">Contact</Link>
         </nav>
-        <button className="border border-white text-white px-6 py-2 rounded-3xl hover:bg-white hover:text-indigo-700 transition">
+        <button onClick={()=>navigate('/login')} className="border border-white text-white px-6 py-2 rounded-3xl hover:bg-white hover:text-indigo-700 transition">
           Login
         </button>
       </div>

@@ -107,8 +107,8 @@ const Landing = () => {
 
 <section className=" text-white py-20 px-6 border-t border-white/10">
   <div className="max-w-6xl mx-auto text-center">
-    <h2 className="text-3xl font-bold mb-12">Trusted by Hostel Admins</h2>
-    <div className="grid md:grid-cols-3 gap-10">
+  <span className="text-3xl font-bold text-white">Trusted by Hostel Admins & Students</span>
+  <div className="grid md:grid-cols-3 gap-10 mt-10">
       <div className="bg-white/10 p-6 rounded-xl shadow-lg">
         <p className="italic text-sm">"Managing our 300+ student hostel has never been easier. Hostlix is truly a game-changer!"</p>
         <h4 className="mt-4 font-bold text-indigo-400">— Mr. Sharma, Warden</h4>
@@ -121,14 +121,102 @@ const Landing = () => {
         <p className="italic text-sm">"Smooth interface, great support, and very affordable."</p>
         <h4 className="mt-4 font-bold text-green-400">— Aarav, IT Team</h4>
       </div>
+
     </div>
+
   </div>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+  <div className="bg-white/10 text-white p-6 rounded-xl shadow-md">
+    <p>"Hostlix makes hostel life easier! I can check payments, raise complaints, and update my profile without running around."</p>
+    <p className="mt-4 text-sm font-semibold text-indigo-400">— Priya, 2nd Year Student</p>
+  </div>
+  <div className="bg-white/10 text-white p-6 rounded-xl shadow-md">
+    <p>"Super simple to use and way better than paper forms. I raised a maintenance request and it got resolved in a day!"</p>
+    <p className="mt-4 text-sm font-semibold text-indigo-400">— Kunal, Final Year Student</p>
+  </div>
+  <div className="bg-white/10 text-white p-6 rounded-xl shadow-md">
+    <p>"Finally, a proper portal to manage everything hostel-related. The reminders for fee deadlines are a lifesaver."</p>
+    <p className="mt-4 text-sm font-semibold text-indigo-400">— Aanya, 1st Year Student</p>
+  </div>
+</div>
+
 </section>
 
+<footer className=" text-gray-300 px-6  border-t py-10 mt-20">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
 
-      {/* { <footer className="text-center text-white text-sm py-6 bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-700">
-        &copy; {new Date().getFullYear()} Hostel Manager. Crafted with 💜 by Team.
-      </footer> } */}
+    <div>
+      <h3 className="text-xl font-semibold text-white mb-3">Hostlix</h3>
+      <p>Simplifying hostel management for institutions across the country. From room allocation to student support — everything in one place.</p>
+    </div>
+
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-3">Contact Us</h3>
+      <ul className="space-y-2 text-sm">
+        <li>Email: <a href="mailto:support@hostlix.com" className="text-indigo-400 hover:underline">support@hostlix.com</a></li>
+        <li>Phone: <a href="tel:+919999999999" className="text-indigo-400 hover:underline">+91 99999 99999</a></li>
+        <li>Support Hours: 9:00 AM – 6:00 PM</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-3">Registered College</h3>
+      <ul className="space-y-2 text-sm">
+        <li>ABES Engineering College</li>
+        <li>Ghaziabad, Uttar Pradesh, India</li>
+        <li>Affiliated to AKTU</li>
+        <li>College Code: 032</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
+      <ul className="space-y-2 text-sm">
+        <li><a href="#home" className="hover:text-indigo-400">Home</a></li>
+        <li><a href="#features" className="hover:text-indigo-400">Features</a></li>
+        <li><a href="#students" className="hover:text-indigo-400">Students</a></li>
+        <li><a href="#rooms" className="hover:text-indigo-400">Rooms</a></li>
+        <li><a href="#payments" className="hover:text-indigo-400">Payments</a></li>
+        <li><a href="#contact" className="hover:text-indigo-400">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {/* <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm flex flex-col md:flex-row justify-between items-center">
+    <p className="mb-3 md:mb-0">&copy; {new Date().getFullYear()} Hostlix. All rights reserved.</p>
+    <div className="space-x-4">
+      <a href="#" className="hover:text-indigo-400">Privacy Policy</a>
+      <a href="#" className="hover:text-indigo-400">Terms of Service</a>
+      <a href="#" className="hover:text-indigo-400">GitHub</a>
+    </div>
+  </div> */}
+</footer>
+
     </div>
   );
 };
